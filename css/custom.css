@@ -1,0 +1,217 @@
+body {
+
+}
+.arrow{
+	position:absolute;
+	-webkit-transform: rotate(45deg);
+   -moz-transform:    rotate(45deg);
+   -ms-transform:     rotate(45deg);
+   -o-transform:      rotate(45deg);
+   margin-left: -120px;
+margin-top: -100px;
+}
+.instructions-icon{
+	margin:10px;
+}
+.nice_text{
+	margin:20px 0px !important;
+	line-height:20px;
+}
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+.submitresults {
+	display: none;
+}
+textarea {
+	width: 90%;
+}
+img.big-illustration-pusher {
+	width: 70px;
+}
+hr {
+	margin: 8px 0;
+}
+.carousel * {
+	text-align: left !important;
+	margin-bottom: 0px;
+}
+.pagination{
+	margin: 0;
+	display:none;
+}
+
+
+/* GEOMETRY SHAPES: */
+/*==============================================*/
+/* TRIANGLE*/
+.Triangle{
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+}
+
+.Triangle.Red{
+	border-bottom: 100px solid red;
+}
+.Triangle.Green{
+	border-bottom: 100px solid green;
+}
+.Triangle.Blue{
+	border-bottom: 100px solid blue;
+}
+.Triangle.Yellow{
+	border-bottom: 100px solid yellow;
+}
+/*==============================================*/
+/* CIRCLE*/
+.Circle {
+	width: 100px;
+	height: 100px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.Circle.Red{
+	background: red;
+}
+.Circle.Green{
+	background: green;
+}
+.Circle.Blue{
+	background: blue;
+}
+.Circle.Yellow{
+	background: yellow;
+}
+/*==============================================*/
+/* SQUARE*/
+.Square {
+	width: 100px;
+	height: 100px;
+}
+.Square.Red{
+	background: red;
+}
+.Square.Green{
+	background: green;
+}
+.Square.Blue{
+	background: blue;
+}
+.Square.Yellow{
+	background: yellow;
+}
+/*==============================================*/
+/* STAR*/
+.Star {
+   margin: 50px 0;
+   position: relative;
+   display: block;
+   color: red;
+   width: 0px;
+   height: 0px;
+   border-right:  50px solid transparent;
+   border-bottom: 35px  solid red;
+   border-left:   50px solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+}
+.Star:before {
+   border-bottom: 40px solid red;
+   border-left: 15px solid transparent;
+   border-right: 15px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+top: -28px;
+left: -39px;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+
+}
+.Star:after {
+   position: absolute;
+   display: block;
+   color: red;
+top: 6px;
+left: -58px;
+   width: 0px;
+   height: 0px;
+   border-right: 50px solid transparent;
+   border-bottom: 35px solid red;
+   border-left: 50px solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+}
+/*---------------*/
+.Star.Red{
+	color: red;
+	border-bottom: 35px  solid red;
+}
+.Star.Red:before{
+	border-bottom: 40px solid red;
+}
+.Star.Red:after {
+	color: red;
+	border-bottom: 35px solid red;
+}
+/*---------------*/
+.Star.Green{
+	color: green;
+	border-bottom: 35px  solid green;
+}
+.Star.Green:before{
+	border-bottom: 40px solid green;
+}
+.Star.Green:after {
+	color: green;
+	border-bottom: 35px solid green;
+}
+/*---------------*/
+.Star.Blue{
+	color: blue;
+	border-bottom: 35px  solid blue;
+}
+.Star.Blue:before{
+	border-bottom: 40px solid blue;
+}
+.Star.Blue:after {
+	color: blue;
+	border-bottom: 35px solid blue;
+}
+/*---------------*/
+.Star.Yellow{
+	color: yellow;
+	border-bottom: 35px  solid yellow;
+}
+.Star.Yellow:before{
+	border-bottom: 40px solid yellow;
+}
+.Star.Yellow:after {
+	color: yellow;
+	border-bottom: 35px solid yellow;
+}
+/*---------------*/
+.shape_container{
+	padding-top:5px;
+}
+/*==============================================*/
+select{
+	width: 150px !important;
+	margin:5px;
+}

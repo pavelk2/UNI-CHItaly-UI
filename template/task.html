@@ -1,0 +1,72 @@
+<div class="item">
+	<div class="span2">
+		<!--img src="images/illustrations/compass.png" class="big-illustration-pusher"-->
+	</div>
+	<div class="span5">
+		<h3>Screen {{=it.domain_id}} out of 10</h3>
+		<input type="hidden" name="domain{{=it.domain_id}}" value="{{=it.domain_name}}" />
+		<input type="hidden" name="right_shape{{=it.domain_id}}" value="{{=it.previous_shape_type}}" />
+		<input type="hidden" name="right_colour{{=it.domain_id}}" value="{{=it.previous_shape_colour}}" />
+
+		<h3><a target="_blank" href="https://www.google.com/#output=search&q={{=it.domain_name}}/&oq={{=it.domain_name}}/&">{{=it.domain_name}}</a>
+		<br/>
+		<small><em>click on the link to see search results in Google</em></small></h3>
+		<hr/>
+		<h6>{{=it.shape_message}}</h6>
+			<div class="shape {{=it.shape_type}} {{=it.shape_colour}}"></div>
+			<div class="shape_container">
+			<h6>In the previous screen it was:</h6>
+			<select class='select' name="shape{{=it.domain_id}}">
+			<option value='0'>Choose shape...</option>
+			<option>Triangle</option>
+			<option>Circle</option>
+			<option>Square</option>
+			<option>Star</option>
+		</select>
+		<select class='select' name="colour{{=it.domain_id}}">
+			<option value='0'>Choose colour...</option>
+			<option>Red</option>
+			<option>Green</option>
+			<option>Blue</option>
+			<option>Yellow</option>
+		</select>
+		</div>
+		<!--h3><small><em>Image of the website on this domain</em></small>
+		<br/>
+		<a href="http://{{=it.domain_name}}" target=_blank""> 
+			<img src="http://mini.s-shot.ru/1200x600/300/jpeg/?http://{{=it.domain_name}}/" class="img-polaroid" /> 
+		</a>
+		<br/>
+		<small><em>click on it to open the website in a new tab</em></small></h3-->
+	</div>
+	<div class="span5">
+		<h3 >Pick an appropriate category</h3>
+		<label class="radio">
+			<input type="radio" name="category{{=it.domain_id}}" value="personal">
+			<strong>Personal</strong> - <small>some examples are gmail.com, yahoo.com, travel blogs, shopping websites and generally for personal uses</small> </label>
+		<label class="radio">
+			<input type="radio" name="category{{=it.domain_id}}" value="Academic" >
+			<strong>Academic</strong> - <small>University websites, research institutes</small> </label>
+		<label class="radio">
+			<input type="radio" name="category{{=it.domain_id}}" value="Business" >
+			<strong>Business</strong> - <small>law firm, IT consultants, related to working life</small> </label>
+		<label class="radio">
+			<input type="radio" name="category{{=it.domain_id}}" value="IT" >
+			<strong>IT</strong> - <small>software provider, internet provider</small> </label>
+		<label class="radio">
+			<input type="radio" name="category{{=it.domain_id}}" value="Broken" >
+			<strong>Broken</strong> - <small>error 404, domain name for sale, site under construction</small> </label>
+		<label class="radio">
+			<input type="radio" name="category{{=it.domain_id}}" value="Other" >
+			<strong>Other</strong> - <small>something that does not fit into the above categories. </small> </label>
+		<h5>Please provide a short explanation of your choice:</h5>
+		<textarea name="proof_{{=it.domain_id}}"></textarea>
+	</div>
+</div>
+<script>
+	$("[name=category{{=it.domain_id}}]").parent().prepend("<span class='icon'></span><span class='icon-to-fade'></span>");
+	$("[name=category{{=it.domain_id}}]").parent().click(function() {
+		setupLabel("[name=category{{=it.domain_id}}]");
+	}); 
+</script>
+<!-- /radios span10 -->

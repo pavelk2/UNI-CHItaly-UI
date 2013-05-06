@@ -1,0 +1,39 @@
+<div class="item">
+	<div class="span2">
+		<!--img src="images/illustrations/compass.png" class="big-illustration-pusher"-->
+
+	</div>
+	<div class="span3">
+		<h6>{{=it.shape_message}}</h6>
+			<div class="shape {{=it.shape_type}} {{=it.shape_colour}}"></div>
+	</div>
+	<div class="span7">
+		<h3>Instructions. Please read this carefully</h3>
+		<p class="nice_text">The task consists of <strong>10</strong> screens.</p>
+		<hr/>
+		<h4 class="nice_text">On each screen you will see a domain name - <strong style="color:green;">you need to pick an appropriate category</strong> out of the 6 available.</h4>
+		
+		<h4 class="nice_text"><img src='images/left-arrow.png' class="arrow" />On each screen please take notice of the <strong style="color:green;">coloured shape on the left</strong>, you will be asked <strong style="color:green;">to remember it</strong> for the next screen in the task.
+		</h4>
+		<h3>Good luck :)</h3>
+		<!--ul>
+			<li class="nice_text">Click on a URL, review it, and classify its domain name in one of six categories listed on the screen;</li>
+			<li class="nice_text">Recall the colored shape from the previous screen, classify it, and remember the current colored shape for the next task.</li>
+		</ul-->
+		<hr/>	
+		<!--p class="nice_text"><strong>Note</strong>: memorize the shape on the left and move to the next screen. <br/>You <strong>can not move back</strong> to a previous task. </p-->
+			<p>You <strong>can not move back</strong> to a previous task. </p>
+			
+			<br/>
+		<div class="start"><a href='#' class="btn btn-primary btn-large">START</a></div>
+	</div>
+	
+	
+</div>
+<script>
+	$("[name=category{{=it.domain_id}}]").parent().prepend("<span class='icon'></span><span class='icon-to-fade'></span>");
+	$("[name=category{{=it.domain_id}}]").parent().click(function() {
+		setupLabel("[name=category{{=it.domain_id}}]");
+	}); 
+</script>
+<!-- /radios span10 -->
